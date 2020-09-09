@@ -1,0 +1,30 @@
+
+const int rojo =  2;      // LED ROJO CONECTAFO A Pin 10
+const int Amarillo =  3; //LED AMARILLO CONECTAFO A Pin 11
+const int verde = 4;    //LED VERDE CONECTAFO A Pin 12
+
+
+void setup() {
+
+  pinMode(rojo, OUTPUT); //SALIDA LED ROJO
+  pinMode(Amarillo, OUTPUT);//SALIDA AMARILLO
+  pinMode(verde, OUTPUT);//SALIDA VERDE
+
+}
+
+void loop() {
+   
+  digitalWrite(rojo, HIGH);//LED ROJO ENCIENDE POR 1 SEGUNDO
+    delay(1000);
+    digitalWrite(rojo, LOW);
+ 
+   digitalWrite(verde, HIGH);//LED VERDE ENCIENDE 2 SEGUNDOS
+    delay(2000);
+    digitalWrite(verde, LOW);
+  
+    digitalWrite(Amarillo, HIGH);//LED AMARILLO MEDIO SEGUNDO
+    delay(500); 
+    digitalWrite(Amarillo, LOW);
+   
+ }
+
